@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;400&display=swap');
+
+
+.containerHome{
+   display: flex;
+   justify-content: baseline;
+   align-items: center;
+   width: 100%;
+   height: 700px;
+ 
+}
+
+.boxFilter{
+    background-color: #D0DB97;
+    width: 20%;
+    height: 100%;
+    box-shadow: 10px 0px 5px -4px rgba(0,0,0,0.63);
+-webkit-box-shadow: 10px 0px 5px -4px rgba(0,0,0,0.63);
+-moz-box-shadow: 10px 0px 5px -4px rgba(0,0,0,0.63);
+}
+
+.boxCoutries{
+   
+    width: 80%;
+    height: 100%;
+    
+}
+
+.boxCoutries{
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: 13px;
+    color: aliceblue;
+}
+.tituloPaises{
+    text-decoration:underline;
+}
+.boxFilter{
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: 13px;
+    
+}
+.tituloFiltros{
+    text-decoration:underline;
+}
