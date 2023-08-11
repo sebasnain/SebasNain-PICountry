@@ -3,6 +3,8 @@ import axios from "axios";
 export const GET_COUNTRIES = "GET_COUNTRIES";
 export const GET_COUNTRIES_BY_NAME = "GET_COUNTRIES_BY_NAME";
 export const GET_COUNTRIES_BY_ID = "GET_COUNTRIES_BY_ID";
+export const ORDER = "ORDER";
+export const FILTER_BY_CONTINENT = "FILTER_BY_CONTINENT";
 
 
 
@@ -33,4 +35,14 @@ export const getCountriesById = (idPais) => {
         console.log(country)
         return dispatch({type:GET_COUNTRIES_BY_ID , payload: country})
     }
+}
+
+export const setOrderCountry = (order) => {
+    console.log(order)
+    return { type: ORDER , payload: order }
+}
+
+export const setFilterCounrtryByContinent = (filter) => {
+    console.log(" desde el action  " + filter)
+    return { type: FILTER_BY_CONTINENT , payload: filter }
 }
