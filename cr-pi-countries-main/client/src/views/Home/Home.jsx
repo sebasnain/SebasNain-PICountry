@@ -2,7 +2,7 @@ import CardsContainer from "../../components/Cards/CardsContainer";
 import style from "./Home.module.css"
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { getCountries , setOrderCountry , setFilterCounrtryByContinent} from "../../redux/action"
+import { getCountries , setOrderCountry , setFilterCounrtryByContinent , setOrderByPoblation} from "../../redux/action"
 import SearchBar from "../../components/SearchBar/SearchBar";
 
 
@@ -24,6 +24,10 @@ const Home = (Props)=> {
     dispatch(setFilterCounrtryByContinent(e.target.value))
   }
 
+  const handleOrderChangePoblation = (e) => {
+    dispatch(setOrderByPoblation(e.target.value))
+  }
+
   const { onSearch } = Props
     return(
         <div className={style.containerHome}>
@@ -36,6 +40,13 @@ const Home = (Props)=> {
               <option value="todos">No especificado</option>
               <option value="Ascendente">A a la Z</option>
               <option value="Desendente">Z a la A</option>
+             </select>
+
+             <select  name="orderPoblation"
+         onClick={handleOrderChangePoblation} className={style.selectores}>
+              <option value="todos">No especificado</option>
+              <option value="Ascendente">men a may</option>
+              <option value="Desendente">may a men</option>
              </select>
              
              <select name="filter"

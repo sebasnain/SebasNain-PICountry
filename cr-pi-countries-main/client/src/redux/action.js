@@ -4,7 +4,9 @@ export const GET_COUNTRIES = "GET_COUNTRIES";
 export const GET_COUNTRIES_BY_NAME = "GET_COUNTRIES_BY_NAME";
 export const GET_COUNTRIES_BY_ID = "GET_COUNTRIES_BY_ID";
 export const ORDER = "ORDER";
+export const ORDER_POBLATION = "ORDER_POBLATION"
 export const FILTER_BY_CONTINENT = "FILTER_BY_CONTINENT";
+
 
 
 
@@ -40,6 +42,11 @@ export const getCountriesById = (idPais) => {
 export const setOrderCountry = (order) => {
     console.log(order)
     return { type: ORDER , payload: order }
+}
+
+export const setOrderByPoblation = (order) => {
+    console.log(order)
+    return { type: ORDER_POBLATION , payload: order}
 }
 
 export const setFilterCounrtryByContinent = (filter) => {

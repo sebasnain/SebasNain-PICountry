@@ -14,7 +14,7 @@ const NavBar = ()=> {
                 <button className={style.button}>Inicio</button>
             </Link>
             <Link to="/Form">
-                <button className={style.button}>Actividad</button>
+                <button className={style.button}>Actividad+</button>
             </Link>
             <Link to="/about">
                 <button className={style.button}>About</button>
