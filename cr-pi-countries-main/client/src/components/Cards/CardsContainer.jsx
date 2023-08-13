@@ -13,7 +13,7 @@ const CardsContainer = () => {
 
   useEffect(() => {
     setCurrentPais(countries.slice((currentPage - 1) * paisesPorPagina, currentPage * paisesPorPagina));
-  }, [countries, currentPage]);
+  }, [countries, currentPage ,paisesPorPagina]);
 
   // Función para cambiar la página actual
   const handlePageChange = (pageNumber) => {
